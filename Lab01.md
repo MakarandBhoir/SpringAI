@@ -12,10 +12,10 @@
     1. Rename application.properties file to application.yml
     1. Add following properties to yaml file
 
-spring:
-  application.name: Lab01 OpenAI
-  main.web-application-type: none     # Do not start a web server.
-
-  ai:
-    retry:
-      max-attempts: 1           # Maximum number of retry attempts.
+    spring:
+      application.name: Lab01 OpenAI
+      main.web-application-type: none     # Do not start a web server.
+    
+      ai:
+        retry:
+          max-attempts: 1           # Maximum number of retry attempts.
