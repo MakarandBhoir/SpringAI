@@ -9,4 +9,5 @@ You will need an account on OpenAI to perform any practical
         *setx SPRING_AI_OPENAI_API_KEY "YOUR-KEY-GOES-HERE"*
 
     - On Linux or Mac you can run:
-        *export SPRING_AI_OPENAI_API_KEY="YOUR-KEY-GOES-HERE"*
+         *export SPRING_AI_OPENAI_API_KEY="YOUR-KEY-GOES-HERE"*
+- Restart your IDE after setting an environment variable.
