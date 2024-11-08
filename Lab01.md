@@ -20,3 +20,4 @@ spring:
     retry:
         max-attempts: 1
 ```
+    1. Check everithing is ok by running main application
