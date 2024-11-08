@@ -14,9 +14,9 @@
 ```
 spring:
     application.name: Lab01 OpenAI
-    main.web-application-type: none     # Do not start a web server.
+    main.web-application-type: none     # dont start web server.
 
     ai:
     retry:
-        max-attempts: 1           # Maximum number of retry attempts.
+        max-attempts: 1
 ```
