@@ -47,13 +47,13 @@ public class MyClient {
 }
 ```
 - Explanation for above code
-    -- Note: the @Profile annotation will be useful later when we want our application to switch between OpenAI, Azure, Ollama, etc
-    -- Configure ChatClient
-    -- Add a call method.
-        --- Define a String parameters for the user input / query.
-        --- Use the client to call the Foundational Model.
-        --- prompt() creates a prompt to pass
-        --- user() sets the "user" message. Pass the given input String.
-        --- call() invokes the model. It returns a CallResponse.
-        --- content() is a simple means of extracting String content from the response. 
+    - Note: the @Profile annotation will be useful later when we want our application to switch between OpenAI, Azure, Ollama, etc
+    - Configure ChatClient
+    - Add a call method.
+        - Define a String parameters for the user input / query.
+        - Use the client to call the Foundational Model.
+        - prompt() creates a prompt to pass
+        - user() sets the "user" message. Pass the given input String.
+        - call() invokes the model. It returns a CallResponse.
+        - content() is a simple means of extracting String content from the response. 
         
