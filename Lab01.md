@@ -21,3 +21,39 @@
             max-attempts: 1
     ```    
 1. Check everithing is ok by running main application
+1. Due to security risk we will not add OpenAI's API key in application.yml, setting this value in an environment variable is safer (we have alredy done this).
+1. Note: The retry settings will override the ChatClient's default settings. We don't want you to experience unnecessary delay or expense.
+1. Save your work and check everythig is ok by running application.
+
+
+## Explore Spring AI's with ChatClient
+- Add following code into com.synergetics following code
+```
+@Component
+@Profile("openai")
+public class MyClient {
+    private final ChatClient client;
+
+    public MyClient(ChatModel model) {
+        client = ChatClient.builder(model).build();
+    }
+    public String call(String input) {
+        return client
+                .prompt()
+                .user(input)
+                .call()
+                .content();
+    }
+}
+```
+- Explanation for above code
+    -- Note: the @Profile annotation will be useful later when we want our application to switch between OpenAI, Azure, Ollama, etc
+    -- Configure ChatClient
+    -- Add a call method.
+        --- Define a String parameters for the user input / query.
+        --- Use the client to call the Foundational Model.
+        --- prompt() creates a prompt to pass
+        --- user() sets the "user" message. Pass the given input String.
+        --- call() invokes the model. It returns a CallResponse.
+        --- content() is a simple means of extracting String content from the response. 
+        
