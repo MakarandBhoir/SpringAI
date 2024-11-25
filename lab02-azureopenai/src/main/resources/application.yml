@@ -1,0 +1,16 @@
+spring:
+  application.name: Lab02 Azure OpenAI
+  main.web-application-type: none     # Do not start a web server.
+  
+  ai:
+    retry:
+      max-attempts: 1    # Maximum number of retry attempts.
+    azure:
+      openai:
+        endpoint: https://myazureopenai25111422.openai.azure.com/   # Azure OpenAI your resource endpoint.
+        # api-key: 1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef  # Azure OpenAI your resource API key.
+        chat:
+          enabled: true   # Enable chat API. default: true
+          options:
+            deployment-name: mydeploymentname  # Azure OpenAI your deployment name.
+            model: gpt-35-turbo  # Azure OpenAI your model name.

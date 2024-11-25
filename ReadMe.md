@@ -16,3 +16,4 @@ You will need an account on OpenAI to perform any practical
 - Restart your IDE after setting an environment variable.
 
 1. [Open AI lab setup](Lab01.md)
+1. [Azure Open AI lab setup](Lab02.md)
