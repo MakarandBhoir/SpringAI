@@ -17,3 +17,5 @@ You will need an account on OpenAI to perform any practical
 
 1. [Open AI lab setup](Lab01.md)
 1. [Azure Open AI lab setup](Lab02.md)
+1. [AWS Bedrock lab setup](Lab03.md)
+1. [Ollama lab setup](Lab04.md)
